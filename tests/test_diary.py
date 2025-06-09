@@ -2,6 +2,8 @@ from lib.diary import make_snippet
 
 def test_make_snippet_returns_string():
     # Arrange, act, assert 
+    result = make_snippet("")
+    assert result == ""
     result = make_snippet("Hello")
     assert type(result) == str
 
